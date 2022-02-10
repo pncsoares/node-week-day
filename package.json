@@ -1,0 +1,35 @@
+{
+  "name": "week-day",
+  "version": "1.0.0",
+  "description": "A node app with a cronjob to tell which day of the week is today",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack src/app.js -o public/bundle.js",
+    "deploy": "firebase deploy --token \"$FIREBASE_TOKEN\" --only hosting"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pncsoares/node-week-day.git"
+  },
+  "keywords": [
+    "node",
+    "cron-job",
+    "day-of-the-week"
+  ],
+  "author": "Pedro Soares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pncsoares/node-week-day/issues"
+  },
+  "homepage": "https://github.com/pncsoares/node-week-day#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "firebase-tools": "^10.1.5",
+    "terser": "^5.10.0"
+  }
+}
